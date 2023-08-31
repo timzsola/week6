@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>會員登入</title>
+  <script type="module" crossorigin src="/week6/assets/main-3140ad9d.js"></script>
+  <link rel="stylesheet" href="/week6/assets/main-adc80606.css">
+</head>
+
+<body>
+ 
+  <div class="d-flex flex-column vh-100">
+    <nav
+  class="navbar navbar-expand-lg navbar-light py-6 border-bottom border-3 mb-8"
+>
+  <div class="container-fluid">
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand me-6 me-md-12 py-0" href="index.html">
+        <h1 class="fs-4 d-flex align-items-center">
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
+            alt="logo"
+            class="logo-img me-0 me-md-4"
+          /><span class="d-none d-md-block">7TAO</span>
+          <span class="d-none d-md-block ms-1 fs-7 fw-bold">活動訂票網</span>
+        </h1></a
+      >
+      <form class="d-flex header-search">
+        <input
+          class="form-control tc-sans border border-2 py-2 py-md-4 px-3 px-md-6"
+          type="search"
+          placeholder="探索活動"
+          aria-label="Search"
+        />
+        <a
+          href="##"
+          type="submit"
+          class="btn btn-primary p-4 d-flex align-items-center"
+          ><i class="icofont-search-1"></i
+        ></a>
+      </form>
+    </div>
+    <button
+      class="navbar-toggler border border-1 border-primary rounded-1"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse flex-grow-0"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav gap-lg-6 pt-8 pt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link fs-6" aria-current="page" href="#"
+            ><i class="icofont-ui-file me-1"></i>REGISTER</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-6" href="login.html"
+            ><i class="icofont-ui-user me-1"></i>LOGIN</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="container flex-grow-1">
+
+      <div class="col-lg-4 col-md-6 col-12 mx-auto text-center mt-md-60 mt-24">
+        <img class="login-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparkler">
+        <h3 class="fw-bold fs-24 my-16">會員登入</h3>
+        <form class="needs-validation text-start" method="POST" class="text-start" novalidate>
+
+          <div class="mb-16">
+            <label class="noto-tc-sans form-label mb-0" for="user_login">帳號</label>
+            <input class="mt-8 mb-8 w-100 form-control form-control-lg border border-2 border-primary login-input"
+              type="text" id="user_login" placeholder="請輸入帳號" aria-label="請輸入帳號" required>
+            <div class="invalid-feedback">
+              請輸入帳號
+            </div>
+          </div>
+
+          <div class="mb-lg-32 mb-24">
+            <label class="noto-tc-sans form-label mb-0" for="user_password">密碼</label>
+            <input class="mt-8 w-100 form-control form-control-lg border border-2 border-primary login-input"
+              type="password" id="user_password" placeholder="請輸入密碼" aria-label="請輸入密碼" required>
+            <div class="invalid-feedback">
+              請輸入密碼
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-submit btn-primary w-100 mt-12">
+            <span class="me-4 fs-20 fw-bold noto-tc-sans">登入</span>
+            <i class="icofont-rounded-double-right"></i>
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+    <footer class="py-6 py-md-8 fs-9 fs-md-7 border-top border-3 text-center">
+  <p>© 7TAO七逃. All Rights Reserved</p>
+</footer>
+  </div>
+   
+      
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+      <script>
+        $(".needs-validation").each(function (index) {
+          $(this).on("submit", function (e) {
+            e.preventDefault();
+            $(this).addClass("was-validated");
+          });
+        });
+
+      </script>
+
+
+</body>
+
+</html>
