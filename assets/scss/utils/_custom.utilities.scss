@@ -1,0 +1,37 @@
+.container-fluid {
+  max-width: 1320px;
+}
+.tc-sans {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.tc-serif {
+  font-family: "Noto Serif TC", sans-serif;
+}
+.lh-150 {
+  line-height: 1.5;
+}
+.lh-120 {
+  line-height: 1.2;
+}
+@include media-breakpoint-up(md) {
+  .py-md-35 {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+  .py-md-38 {
+    padding-top: 38px !important;
+    padding-bottom: 38px !important;
+  }
+}
+.ls-2 {
+  letter-spacing: 2px;
+}
+.bg-gray {
+  background: #ebeae8;
+}
+.w-30 {
+  width: 30%;
+}
+.w-10 {
+  width: 10%;
+}

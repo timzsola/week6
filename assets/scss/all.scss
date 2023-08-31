@@ -1,0 +1,64 @@
+// EN-font
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+// TC-font-subtitle
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap");
+// TC-font-text
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+// google icon 載入「開賣中」的箭頭符號
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import '../icofont/icofont.min.css';
+
+// first
+@import "bootstrap/scss/functions";
+
+// variables
+@import "./utils/variables";
+
+// required
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// Optionally include any other parts as needed
+@import "bootstrap/scss/utilities";
+@import "./utils/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/helpers";
+
+// bootstrap components
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/transitions.scss";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/tables";
+
+// custom components
+@import "./components/buttons";
+@import "./components/card";
+@import "./components/badge";
+
+// bootstrap api
+@import "bootstrap/scss/utilities/api";
+
+// custom-utilities
+@import "./utils/custom.utilities";
+
+// base
+@import "./base";
+
+// layout
+@import "./layout/header";
+
+// pages
+@import "./pages/index";
+
+
+

@@ -1,0 +1,76 @@
+.details {
+  &-img {
+    height: 550px;
+  }
+  &-time {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(30deg);
+      width: 2px;
+      height: 100px;
+      background: $primary;
+    }
+    &-date {
+      margin-bottom: 125px;
+    }
+  }
+  &-ticket {
+    &-date {
+      width: calc(413 / 1296 * 100%);
+    }
+    &-type {
+      width: calc(373 / 1296 * 100%);
+    }
+    &-price {
+      width: calc(381 / 1296 * 100%);
+    }
+    &-buy {
+      width: calc(128 / 1296 * 100%);
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &-time {
+      &::before {
+        height: 50px;
+      }
+      &-date {
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+    &-ticket {
+      &-date {
+        width: calc(82 / 350 * 100%);
+      }
+      &-type {
+        width: calc(161 / 350 * 100%);
+      }
+      &-price {
+        width: calc(55 / 350 * 100%);
+      }
+      &-buy {
+        width: calc(52 / 350 * 100%);
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &-img {
+      height: 180px;
+    }
+    &-ticket {
+      &-buy-button {
+        --bs-border-width: 1px;
+      }
+      &-date,
+      &-type,
+      &-price,
+      &-buy {
+        --bs-border-width: 2px;
+      }
+    }
+  }
+}

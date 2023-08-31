@@ -1,0 +1,13 @@
+.btn {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+}
+.btn-primary {
+  border: none;
+}
+.btn-primary,
+.btn-outline-primary {
+  &:hover {
+    color: $secondary;
+  }
+}

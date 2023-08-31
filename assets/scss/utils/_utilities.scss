@@ -1,0 +1,47 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    // custom
+    "object-fit":
+      (
+        property: object-fit,
+        class: o-f,
+        values: contain cover,
+      ),
+    "width": (
+      property: width,
+      responsive: true,
+      // custom
+      class: w,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto,
+      ),
+    ),
+    "font-size": (
+      rfs: true,
+      property: font-size,
+      responsive: true,
+      // custom
+      class: fs,
+      values: $font-sizes,
+    ),
+    // custom
+    "row-gap":
+      (
+        rfs: true,
+        property: row-gap,
+        responsive: true,
+        class: r-gap,
+        values: (
+          2: 8px,
+          6: 24px,
+          10: 40px,
+          12: 48px,
+        ),
+      )
+  )
+);
